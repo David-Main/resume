@@ -7,7 +7,7 @@
 		<title>David Mainoo</title>
 
 		<!-- link to stylesheets -->
-		<link rel="stylesheet" href="./tailwind.css" />
+		<link rel="stylesheet" href="./styles/tailwind.css" />
 		<link rel="stylesheet" href="./styles/custom.css" />
 
 		<!-- manifests -->
@@ -32,9 +32,9 @@
 
 	<body class="dark:bg-gray-900 dark:text-gray-300">
 		<div
-			class="container w-11/12 max-w-3xl md:px-14 px-6 mx-auto py-12 flex flex-col gap-24"
+			class="container w-11/12 max-w-3xl md:pxnpm s-14 px-6 mx-auto py-12 flex flex-col gap-28 bg:white"
 		>
-			<div class="flex flex-col gap-12">
+			<div class="flex flex-col gap-20">
 				<header>
 					<figure class="mx-auto text-center">
 						<img
@@ -44,7 +44,7 @@
 						/>
 						<figcaption>
 							<h1 class="name text-3xl">David Mainoo</h1>
-							<p class="occupation dark:text-fuchsia-400 text-lg font-thin">
+							<p class="occupation dark:text-fuchsia-400 text-xl font-thin">
 								Computer Science Student
 							</p>
 						</figcaption>
@@ -92,11 +92,11 @@
 				</header>
 				<!-- main / sections -->
 				<article class="article-profile sm:text-justify md:flex gap-12">
-					<h3
-						class="article-title basis-3/12 my-4 md:my-0 text-2xl dark:text-yellow-500"
-					>
-						Profile
-					</h3>
+					<div class="basis-3/12">
+						<h3 class="article-title text-xl my-4 md:my-0 dark:text-yellow-500">
+							Profile
+						</h3>
+					</div>
 					<div class="article-text basis-11/12 flex flex-col gap-4">
 						<p>
 							My regard for Mathematics has grown ever since I stumbled upon the
@@ -118,7 +118,7 @@
 			</div>
 
 			<article class="article-education">
-				<h3 class="article-title text-2xl text-red-400 mb-7">
+				<h3 class="article-title text-xl dark:text-red-400 mb-7">
 					Educational Background
 				</h3>
 				<div class="article-text flex flex-col gap-8 mt-3">
@@ -126,15 +126,17 @@
 						class="edu edu-two flex sm:flex-col md:flex-row sm:gap-2 md:gap-12"
 					>
 						<h5
-							class="edu-range md:basis-3/12 md:text-sm sm:text-lg text-red-200"
+							class="edu-range md:basis-3/12 md:text-sm sm:text-xl dark:text-red-200 font-semibold"
 						>
 							January 2021 - December 2024
 						</h5>
 						<div class="edu-details md:basis-11/12 px-0">
-							<h5 class="edu-place md:text-sm text-red-200 mb-2">
+							<h5
+								class="edu-place md:text-sm dark:text-red-200 mb-2 font-semibold"
+							>
 								University of Ghana
 							</h5>
-							<ul class="px-5">
+							<ul class="px-5 flex flex-col gap-3">
 								<li>
 									Working my way up a Bachelor's degree as a Single Major in
 									Computer Science.
@@ -150,14 +152,18 @@
 					<section
 						class="edu edu-one flex sm:flex-col md:flex-row sm:gap-2 md:gap-12"
 					>
-						<h5 class="edu-range md:basis-3/12 md:text-sm text-lg text-red-200">
+						<h5
+							class="edu-range md:basis-3/12 md:text-sm text-xl dark:text-red-200 font-semibold"
+						>
 							September 2017 - September 2020
 						</h5>
 						<div class="edu-details md:basis-11/12 px-0">
-							<h5 class="edu-place md:text-sm text-red-200 mb-2">
+							<h5
+								class="edu-place md:text-sm dark:text-red-200 mb-2 font-semibold"
+							>
 								Presbyterian Boys' Secondary School, Legon
 							</h5>
-							<ul class="px-5">
+							<ul class="px-5 flex flex-col gap-3">
 								<li>
 									Gained tuition in General Science; Biology, Mathematics,
 									Physics and Chemistry [electives]
@@ -177,9 +183,9 @@
 			</article>
 
 			<article class="article-technologies">
-				<h3 class="article-title text-3xl text-green-400">Technologies</h3>
+				<h3 class="article-title text-xl">Technologies</h3>
 				<div
-					class="article-text my-8 grid grid-cols-4 justify-center align-middle gap-14"
+					class="article-text my-8 grid md:grid-cols-4 grid-cols-3 justify-center align-middle gap-14 text-1-body-lighter"
 				>
 					<p class="icon-tech flex flex-col justify-center text-center">
 						<svg class="icon-tech-svg w-14 h-14 mx-auto">
@@ -245,37 +251,15 @@
 			</article>
 
 			<article class="article-projects">
-				<h3 class="article-title">Projects</h3>
-				<div class="article-text">
-					<section class="project project-one">
-						<figure class="project-image">
-							<figcaption>
-								<h5>
-									Ecommerce <br />
-									Item-View Page
-								</h5>
-							</figcaption>
-						</figure>
-						<ul class="project-description">
-							<li>Built with pure HTML, CSS and Javascript</li>
-							<li>
-								This project was a challenge from<a href=""> Frontend Mentor</a
-								>, a platform where people can practice to improve their
-								frontend skills
-							</li>
-							<li>
-								You can view the code on <a href="">my GitHub profile</a> or
-								<a href="">the live site</a> hosted using GitHub pages... take
-								it for a spin.
-							</li>
-						</ul>
-					</section>
-
-					<section class="project project-two">
-						<figure class="project-image">
+				<h3 class="article-title text-lg">Projects</h3>
+				<div class="article-text flex flex-col gap-8 my-5">
+					<section class="project project-two flex gap-12">
+						<figure
+							class="project-image border border-gray-300 rounded-sm flex flex-col justify-end align-middle p-2 h-32 md:h-36 basis-4/12"
+						>
 							<figcaption><h5>Touch-Type</h5></figcaption>
 						</figure>
-						<ul class="project-description">
+						<ul class="project-description flex flex-col gap-2 basis-11/12">
 							<li>Built with Reactjs and a library from NPM.</li>
 							<li>
 								This app allows one to test how many words he or she can type in
@@ -283,9 +267,57 @@
 								the basics of Reactjs.
 							</li>
 							<li>
-								You can view the code on <a href="">my GitHub profile</a> or
-								<a href="">the live site</a> hosted using GitHub pages... take
-								it for a spin.
+								You can view the code on
+								<a
+									target="_blank"
+									href="https://github.com/David-Main/touch-type"
+									>my GitHub profile</a
+								>
+								or
+								<a
+									target="_blank"
+									href="https://david-main.github.io/touch-type"
+									>the live site</a
+								>
+								hosted using GitHub pages... take it for a spin.
+							</li>
+						</ul>
+					</section>
+
+					<section class="project project-one flex gap-12">
+						<figure
+							class="project-image border border-gray-300 rounded-sm flex flex-col justify-end align-middle p-2 h-32 min-w-fit md:h-36 basis-2/5 md:basis-4/12"
+						>
+							<figcaption>
+								<h5>
+									Ecommerce <br />
+									Item-View Page
+								</h5>
+							</figcaption>
+						</figure>
+						<ul class="project-description flex flex-col gap-2 basis-11/12">
+							<li>Built with pure HTML, CSS and Javascript</li>
+							<li>
+								This project was a challenge from
+								<a target="_blank" href="https://frontendmentor.io">
+									Frontend Mentor</a
+								>, a platform where people can practice to improve their
+								frontend skills
+							</li>
+							<li>
+								You can view the code on
+								<a
+									target="_blank"
+									href="https://github.com/David-Main/feMentor-eCommerce"
+									>my GitHub profile</a
+								>
+								or
+								<a
+									target="_blank"
+									href="https://david-main.github.io/feMentor-eCommerce/"
+									>the live site</a
+								>
+								hosted using GitHub pages... take it for a spin.
 							</li>
 						</ul>
 					</section>

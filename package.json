@@ -7,6 +7,7 @@
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"tailwind::watch": "npx tailwindcss -i ./src/tailwind.css -o ./public/tailwind.css --watch",
 		"goLive": "live-server ./public/",
+		"build::css": "postcss src/tailwind.css -o public/styles/tailwind.css --watch",
 		"start-dev": "concurrently \"npm run tailwind::watch\" \"npm run goLive\"",
 		"setup::dev": "npm install && npm run start-dev"
 	},
@@ -22,8 +23,12 @@
 	},
 	"homepage": "https://github.com/David-Main/resume#readme",
 	"devDependencies": {
+		"autoprefixer": "^10.4.4",
 		"concurrently": "^7.0.0",
 		"live-server": "^1.2.1",
-		"tailwindcss": "^3.0.23"
+		"postcss": "^8.4.12",
+		"postcss-cli": "^9.1.0",
+		"tailwindcss": "^3.0.23",
+		"watch": "^1.0.2"
 	}
 }
