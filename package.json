@@ -1,27 +1,31 @@
 {
-  "name": "resume",
-  "version": "1.0.0",
-  "description": "This is a webpage of my personal resume",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/David-Main/resume.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/David-Main/resume/issues"
-  },
-  "homepage": "https://github.com/David-Main/resume#readme",
-  "devDependencies": {
-    "autoprefixer": "^10.4.4",
-    "live-server": "^1.2.1",
-    "postcss": "^8.4.12",
-    "tailwindcss": "^3.0.23",
-    "watch": "^1.0.2"
-  }
+	"name": "resume",
+	"version": "1.0.0",
+	"description": "This is a webpage of my personal resume",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"tailwind::watch": "npx tailwindcss -i ./src/tailwind.css -o ./public/tailwind.css --watch",
+		"goLive": "live-server ./public/",
+		"start-dev": "concurrently \"npm run tailwind::watch\" \"npm run goLive\""
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/David-Main/resume.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/David-Main/resume/issues"
+	},
+	"homepage": "https://github.com/David-Main/resume#readme",
+	"devDependencies": {
+		"autoprefixer": "^10.4.4",
+		"concurrently": "^7.0.0",
+		"live-server": "^1.2.1",
+		"postcss": "^8.4.12",
+		"tailwindcss": "^3.0.23",
+		"watch": "^1.0.2"
+	}
 }
