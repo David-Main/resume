@@ -1,0 +1,55 @@
+* {
+	/* theme colors */
+	--yellow-3: #ffa305;
+	--yellow-2: #ffa305b3;
+	--yellow-1: #ffa30533;
+
+	--red-3: #d9665b;
+	--red-2: #d9665bb3;
+	--red-1: #d9665b33;
+
+	--green-3: #03a678;
+	--green-2: #03a678b3;
+	--green-1: #03a67833;
+
+	--blue-3: #5593c9;
+	--blue-2: #5593c9b3;
+	--blue-1: #5593c933;
+}
+
+body {
+}
+
+.iconbg {
+	height: 1.7em;
+	width: 1.7em;
+
+	background-color: var(--blue-1);
+	border-radius: 3px;
+	position: relative;
+}
+.iconbg:hover {
+	filter: brightness(1.2);
+	transform: scale(1.1);
+}
+
+.iconbg-phone {
+	background-color: var(--yellow-2);
+}
+.iconbg-github {
+	background-color: var(--green-2);
+}
+.iconbg-linkedIn {
+	background-color: var(--blue-2);
+}
+.iconbg-mail {
+	background-color: var(--red-2);
+}
+
+.contacts .icon {
+	fill: currentColor;
+	position: absolute;
+
+	top: 0.4em;
+	left: 0.53em;
+}
