@@ -37,7 +37,7 @@ The following are requirements before this command can work.
 2. In your terminal, type the following command;
 
    ```
-   npm run begin::dev
+   npm run setup::dev
    ```
 
 3. That should be all; you should now see an open browser window,  
