@@ -7,7 +7,9 @@
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"tailwind::watch": "npx tailwindcss -i ./src/tailwind.css -o ./public/tailwind.css --watch",
 		"goLive": "live-server ./public/",
-		"start-dev": "concurrently \"npm run tailwind::watch\" \"npm run goLive\""
+		"start-dev": "concurrently \"npm run tailwind::watch\" \"npm run goLive\"",
+		
+		"begin::dev": "npm install && npm run start-dev"
 	},
 	"repository": {
 		"type": "git",
