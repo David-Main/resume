@@ -9,7 +9,8 @@
 		"goLive": "live-server ./public/",
 		"build::css": "postcss src/tailwind.css -o public/styles/tailwind.css --watch",
 		"start-dev": "concurrently \"npm run tailwind::watch\" \"npm run goLive\"",
-		"setup::dev": "npm install && npm run start-dev"
+		"setup::dev": "npm install && npm run start-dev",
+		"deploy": "gh-pages -d public"
 	},
 	"repository": {
 		"type": "git",
@@ -21,10 +22,11 @@
 	"bugs": {
 		"url": "https://github.com/David-Main/resume/issues"
 	},
-	"homepage": "https://github.com/David-Main/resume/public/index.html",
+	"homepage": "https://david-main.github.io/resume/",
 	"devDependencies": {
 		"autoprefixer": "^10.4.4",
 		"concurrently": "^7.0.0",
+		"gh-pages": "^3.2.3",
 		"live-server": "^1.2.1",
 		"postcss": "^8.4.12",
 		"postcss-cli": "^9.1.0",
