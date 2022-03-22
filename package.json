@@ -5,7 +5,7 @@
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"tailwind::watch": "npx tailwindcss -i ./src/tailwind.css -o ./public/tailwind.css --watch",
+		"tailwind::watch": "npx tailwindcss -i ./src/tailwind.css -o ./public/styles/tailwind.css --watch",
 		"goLive": "live-server ./public/",
 		"build::css": "postcss src/tailwind.css -o public/styles/tailwind.css --watch",
 		"start-dev": "concurrently \"npm run tailwind::watch\" \"npm run goLive\"",

@@ -146,7 +146,7 @@ li a:hover {
 		url(../bgs/three.svg) 60% 98% no-repeat;
 	background-size: 6rem;
 }
-
+/* 
 .project-one .project-image {
 	background: url(../images/ecommerce.PNG), #d0d0d044;
 	background-size: contain;
@@ -158,4 +158,4 @@ li a:hover {
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-blend-mode: multiply;
-}
+} */

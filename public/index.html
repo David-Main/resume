@@ -30,9 +30,9 @@
 		<!--  -->
 	</head>
 
-	<body class="dark:bg-gray-900 dark:text-gray-300">
+	<body class="dark:bg-gray-900 dark:text-gray-300 bg-background">
 		<div
-			class="container w-11/12 max-w-3xl md:pxnpm s-14 px-6 mx-auto py-12 flex flex-col gap-28 bg:white"
+			class="container w-11/12 max-w-3xl md:pxnpm s-14 px-6 mx-auto py-12 flex flex-col gap-32 text-1-body bg:white"
 		>
 			<div class="flex flex-col gap-20">
 				<header>
@@ -42,9 +42,9 @@
 							alt="profile picture of David Mainoo"
 							class="profile__img w-32 mx-auto"
 						/>
-						<figcaption>
+						<figcaption class="mt-2">
 							<h1 class="name text-3xl">David Mainoo</h1>
-							<p class="occupation dark:text-fuchsia-400 text-xl font-thin">
+							<p class="occupation dark:text-fuchsia-400 font-light">
 								Computer Science Student
 							</p>
 						</figcaption>
@@ -123,10 +123,10 @@
 				</h3>
 				<div class="article-text flex flex-col gap-8 mt-3">
 					<section
-						class="edu edu-two flex sm:flex-col md:flex-row sm:gap-2 md:gap-12"
+						class="edu edu-two flex flex-col md:flex-row sm:gap-2 md:gap-12"
 					>
 						<h5
-							class="edu-range md:basis-3/12 md:text-sm sm:text-xl dark:text-red-200 font-semibold"
+							class="edu-range md:basis-3/12 text-lg md:text-sm dark:text-red-200 font-semibold"
 						>
 							January 2021 - December 2024
 						</h5>
@@ -150,10 +150,10 @@
 					</section>
 
 					<section
-						class="edu edu-one flex sm:flex-col md:flex-row sm:gap-2 md:gap-12"
+						class="edu edu-one flex flex-col md:flex-row sm:gap-2 md:gap-12"
 					>
 						<h5
-							class="edu-range md:basis-3/12 md:text-sm text-xl dark:text-red-200 font-semibold"
+							class="edu-range md:basis-3/12 md:text-sm text-lg dark:text-red-200 font-semibold"
 						>
 							September 2017 - September 2020
 						</h5>
@@ -252,14 +252,19 @@
 
 			<article class="article-projects">
 				<h3 class="article-title text-lg">Projects</h3>
-				<div class="article-text flex flex-col gap-8 my-5">
-					<section class="project project-two flex gap-12">
+				<div class="article-text flex flex-col gap-20 md:gap-8 my-5">
+					<section class="project project-two md:flex md:flex-row gap-12">
 						<a
 							target="_blank"
 							href="https://david-main.github.io/touch-type"
-							class="project-image hover:scale-105 cursor-pointer border border-gray-300 rounded-sm flex flex-col justify-end align-middle h-32 md:h-36 basis-4/12"
+							class="flex my-5 md:my-0 hover:scale-105 rounded-sm w-4/6 border border-gray-300 md:basis-5/12"
 						>
-							<figure>
+							<figure class="flex flex-col align-middle">
+								<img
+									src="./images/touch-type.PNG"
+									alt="touch-type screenshot"
+									class="w-full"
+								/>
 								<figcaption
 									class="p-2 px-3 font-medium text-sm bg-gray-50 text-gray-800"
 								>
@@ -292,13 +297,19 @@
 						</ul>
 					</section>
 
-					<section class="project project-one flex gap-12">
+					<section class="project project-two md:flex md:flex-row gap-12">
 						<a
 							target="_blank"
 							href="https://david-main.github.io/feMentor-eCommerce/"
-							class="project-image hover:scale-105 cursor-pointer border border-gray-300 rounded-sm flex flex-col justify-end align-middle h-32 min-w-fit md:h-36 basis-2/5 md:basis-4/12"
+							class="flex my-5 md:my-0 hover:scale-105 rounded-sm w-4/6 border border-gray-300 md:basis-5/12"
 						>
-							<figure>
+							<figure class="flex flex-col justify-items-stretch align-middle">
+								<img
+									src="./images/ecommerce.PNG"
+									alt="touch-type screenshot"
+									class="w-full"
+								/>
+
 								<figcaption
 									class="p-2 px-3 font-medium text-sm bg-gray-50 text-orange-800"
 								>
