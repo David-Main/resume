@@ -21,7 +21,7 @@
 	"bugs": {
 		"url": "https://github.com/David-Main/resume/issues"
 	},
-	"homepage": "https://github.com/David-Main/resume#readme",
+	"homepage": "https://github.com/David-Main/resume/public/index.html",
 	"devDependencies": {
 		"autoprefixer": "^10.4.4",
 		"concurrently": "^7.0.0",
