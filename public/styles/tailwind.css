@@ -860,6 +860,51 @@ Ensure the default browser behavior of the `hidden` attribute.
     --tw-text-opacity: 1;
     color: rgb(254 202 202 / var(--tw-text-opacity));
   }
+
+  .dark\:text-red-50 {
+    --tw-text-opacity: 1;
+    color: rgb(254 242 242 / var(--tw-text-opacity));
+  }
+
+  .dark\:text-gray-200 {
+    --tw-text-opacity: 1;
+    color: rgb(229 231 235 / var(--tw-text-opacity));
+  }
+
+  .dark\:text-1-body-dark-mode {
+    --tw-text-opacity: 1;
+    color: rgb(213 213 213 / var(--tw-text-opacity));
+  }
+
+  .dark\:text-blue-30 {
+    --tw-text-opacity: 1;
+    color: rgb(85 147 201 / var(--tw-text-opacity));
+  }
+
+  .dark\:text-green-30 {
+    --tw-text-opacity: 1;
+    color: rgb(3 166 120 / var(--tw-text-opacity));
+  }
+
+  .dark\:text-fuchsia-50 {
+    --tw-text-opacity: 1;
+    color: rgb(253 244 255 / var(--tw-text-opacity));
+  }
+
+  .dark\:text-red-30 {
+    --tw-text-opacity: 1;
+    color: rgb(217 102 91 / var(--tw-text-opacity));
+  }
+
+  .dark\:text-yellow-300 {
+    --tw-text-opacity: 1;
+    color: rgb(253 224 71 / var(--tw-text-opacity));
+  }
+
+  .dark\:text-yellow-30 {
+    --tw-text-opacity: 1;
+    color: rgb(255 163 5 / var(--tw-text-opacity));
+  }
 }
 
 @media (min-width: 640px) {

@@ -4,12 +4,13 @@
 	"description": "This is a webpage of my personal resume",
 	"main": "index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
+		"start::dev": "concurrently \"npm run tailwind::watch\" \"npm run goLive\"",
 		"tailwind::watch": "npx tailwindcss -i ./src/tailwind.css -o ./public/styles/tailwind.css --watch",
 		"goLive": "live-server ./public/",
-		"build::css": "postcss src/tailwind.css -o public/styles/tailwind.css --watch",
-		"start-dev": "concurrently \"npm run tailwind::watch\" \"npm run goLive\"",
-		"setup::dev": "npm install && npm run start-dev",
+		"postcss::watch": "postcss src/tailwind.css -o public/styles/tailwind.css --watch",
+		"build::css": "NODE_ENV=production postcss src/tailwind.css -o public/styles/tailwind.css",
+		"setup::dev": "npm install && npm run start::dev",
+		"predeploy": "npm run build::css",
 		"deploy": "gh-pages -d public"
 	},
 	"repository": {
@@ -26,6 +27,7 @@
 	"devDependencies": {
 		"autoprefixer": "^10.4.4",
 		"concurrently": "^7.0.0",
+		"cssnano": "^5.1.5",
 		"gh-pages": "^3.2.3",
 		"live-server": "^1.2.1",
 		"postcss": "^8.4.12",
