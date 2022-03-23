@@ -141,21 +141,8 @@ li a:hover {
 
 	padding-bottom: 4rem;
 
-	background: url(./bgs/one.svg) 80% 10% no-repeat,
+	background: url(../bgs/one.svg) 80% 10% no-repeat,
 		url(../bgs/two.svg) 2% 50% no-repeat,
 		url(../bgs/three.svg) 60% 98% no-repeat;
 	background-size: 6rem;
 }
-/* 
-.project-one .project-image {
-	background: url(../images/ecommerce.PNG), #d0d0d044;
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-blend-mode: multiply;
-}
-.project-two .project-image {
-	background: url(../images/touch-type.PNG), #c9c9c94a;
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-blend-mode: multiply;
-} */
