@@ -130,13 +130,14 @@ li a:hover {
 	--border-color: var(--green-3);
 
 	background: url(../bgs/one.svg) 4rem 3rem no-repeat,
-		url(../bgs/three.svg) 40% 90% no-repeat,
-		url(../bgs/two.svg) 90% 30% no-repeat;
+		url(../bgs/three.svg) 50% 90% no-repeat,
+		url(../bgs/two.svg) 90% 35% no-repeat;
 	background-size: 6rem;
 }
 
 /* PROJECTS */
 .article-projects {
+	/* page-break-before: left; */
 	--border-color: var(--blue-3);
 
 	padding-bottom: 4rem;
@@ -145,4 +146,8 @@ li a:hover {
 		url(../bgs/two.svg) 2% 50% no-repeat,
 		url(../bgs/three.svg) 60% 98% no-repeat;
 	background-size: 6rem;
+}
+
+abbr {
+	text-decoration: none;
 }
