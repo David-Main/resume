@@ -35,7 +35,8 @@ module.exports = {
 				1: {
 					"body-dark-mode": "#d5d5d5",
 					body: "#707070",
-					"body-lighter": "#808080",
+					print: "#606060",
+					"body-lighter": "#b0b0b0",
 				},
 
 				/* theme colors */

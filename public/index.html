@@ -74,12 +74,12 @@
 	</head>
 
 	<body
-		class="dark:bg-gray-900 dark:text-gray-400 text-1-body bg-background"
+		class="dark:bg-gray-900 font-medium dark:text-gray-300 text-1-body print:bg-gray-50 print:text-1-print bg-background"
 	>
 		<div
-			class="container w-11/12 max-w-3xl md:pxnpm s-14 px-6 mx-auto py-12 flex flex-col gap-32 bg:white"
+			class="container w-11/12 print:w-10/12 max-w-3xl s-14 px-6 mx-auto py-12 flex flex-col print:gap-24 gap-32 bg:white"
 		>
-			<div class="flex flex-col gap-20">
+			<div class="flex flex-col gap-20 print:gap-12">
 				<header>
 					<figure class="mx-auto text-center">
 						<img
@@ -100,61 +100,78 @@
 						</figcaption>
 					</figure>
 					<div
-						class="contacts flex print:flex-col w-10/12 mx-auto justify-center gap-16 my-6 dark:text-gray-300 text-gray-900"
+						class="contacts flex print:flex flex-wrap print:gap-8 w-11/12 mx-auto justify-center gap-16 my-6 dark:text-gray-300 text-gray-900"
 					>
-						<div class="contents print:flex print:justify-between">
+						<div class="contents print:flex min-w-max print:gap-8">
 							<abbr
 								title="+233243346847"
-								class="iconbg iconbg-phone w-8"
+								class="flex items-center gap-3 font-medium"
 							>
-								<a target="_blank" href="tel:+233243346847">
+								<a
+									target="_blank"
+									href="tel:+233243346847"
+									class="iconbg iconbg-phone w-8"
+								>
 									<svg class="icon icon-phone w-10/12 h-8">
 										<use href="#icon-phone" />
 									</svg>
 								</a>
+								<span class="hidden print:block text-1-print"
+									>+233 24 334 6847</span
+								>
 							</abbr>
 							<abbr
 								title="github.com/David-Main"
-								class="iconbg iconbg-github w-8"
+								class="flex items-center gap-3 font-medium"
 							>
 								<a
 									target="_blank"
 									href="https://github.com/David-Main/"
+									class="iconbg iconbg-github w-8"
 								>
 									<svg class="icon icon-github w-10/12 h-8">
 										<use href="#icon-github" />
 									</svg>
 								</a>
+								<span class="hidden print:inline-block text-1-print"
+									>David-Main</span
+								>
 							</abbr>
-						</div>
-						<div class="contents print:flex print:justify-between">
 							<abbr
 								title="https://linkedIn.com/in/davidmainoo"
-								class="iconbg iconbg-linkedIn w-8"
+								class="flex items-center gap-3 font-medium"
 							>
 								<a
 									target="_blank"
 									href="https://linkedIn.com/in/davidmainoo"
+									class="iconbg iconbg-linkedIn w-8"
 								>
 									<svg class="icon icon-linkedIn w-10/12 h-8">
 										<use href="#icon-linkedIn" />
 									</svg>
 								</a>
-							</abbr>
-							<abbr
-								title="work.davidmainoo@gmail.com"
-								class="iconbg iconbg-mail w-8"
-							>
-								<a
-									target="_blank"
-									href="mailto:work.davidmainoo@gmail.com"
+								<span class="hidden print:inline-block text-1-print"
+									>David Mainoo</span
 								>
-									<svg class="icon icon-mail w-10/12 h-8">
-										<use href="#icon-mail" />
-									</svg>
-								</a>
 							</abbr>
 						</div>
+						<abbr
+							title="work.davidmainoo@gmail.com"
+							class="flex items-center gap-3 font-medium"
+						>
+							<a
+								target="_blank"
+								href="mailto:work.davidmainoo@gmail.com"
+								class="iconbg iconbg-mail w-8"
+							>
+								<svg class="icon icon-mail w-10/12 h-8">
+									<use href="#icon-mail" />
+								</svg>
+							</a>
+							<span class="hidden print:inline-block text-1-print"
+								>work.davidmainoo@gmail.com</span
+							>
+						</abbr>
 					</div>
 				</header>
 				<!-- main / sections -->
@@ -261,7 +278,7 @@
 					Technologies
 				</h3>
 				<div
-					class="article-text my-8 grid md:grid-cols-4 grid-cols-3 justify-center align-middle gap-14 text-1-body-lighter"
+					class="article-text my-8 grid md:grid-cols-4 print:grid-cols-4 grid-cols-3 justify-center align-middle gap-14 print:text-gray-500 text-1-body-lighter"
 				>
 					<p
 						class="icon-tech flex flex-col justify-center text-center"
@@ -346,18 +363,19 @@
 				</div>
 			</article>
 
+			<br class="hidden print:block" />
 			<article class="article-projects">
 				<h3 class="article-title text-lg dark:text-blue-30">
 					Projects
 				</h3>
-				<div class="article-text flex flex-col gap-20 md:gap-8 my-5">
+				<div class="article-text flex flex-col gap-20 md:gap-14">
 					<section
-						class="project project-two md:flex md:flex-row gap-12"
+						class="project project-two md:flex md:flex-row print:flex items-start gap-12"
 					>
 						<a
 							target="_blank"
 							href="https://david-main.github.io/touch-type"
-							class="flex my-5 md:my-0 hover:scale-105 rounded-sm w-4/6 border border-gray-300 md:basis-5/12"
+							class="flex my-5 md:my-0 hover:scale-105 rounded-sm border w-full border-gray-300 md:basis-5/12 print:basis-5/12"
 						>
 							<figure class="flex flex-col align-middle">
 								<img
@@ -373,7 +391,7 @@
 							</figure>
 						</a>
 						<ul
-							class="project-description flex flex-col gap-2 basis-11/12"
+							class="project-description flex flex-col gap-2 basis-11/12 print:basis-full"
 						>
 							<li>Built with Reactjs and a library from NPM.</li>
 							<li>
@@ -400,12 +418,12 @@
 					</section>
 
 					<section
-						class="project project-two md:flex md:flex-row gap-12"
+						class="project project-two md:flex md:flex-row-reverse print:flex print:flex-row-reverse print:items-start gap-12"
 					>
 						<a
 							target="_blank"
 							href="https://david-main.github.io/feMentor-eCommerce/"
-							class="flex my-5 md:my-0 hover:scale-105 rounded-sm w-4/6 border border-gray-300 md:basis-5/12"
+							class="flex my-5 md:my-0 hover:scale-105 rounded-sm w-full border border-gray-300 md:basis-5/12 print:basis-5/12"
 						>
 							<figure
 								class="flex flex-col justify-items-stretch align-middle"
@@ -424,7 +442,7 @@
 							</figure>
 						</a>
 						<ul
-							class="project-description flex flex-col gap-2 basis-11/12"
+							class="project-description flex flex-col gap-2 basis-11/12 print:basis-full"
 						>
 							<li>Built with pure HTML, CSS and Javascript</li>
 							<li>
@@ -452,6 +470,13 @@
 						</ul>
 					</section>
 				</div>
+				<a
+					target="_blank"
+					href="./david.pdf"
+					class="download ml-auto hidden mt-16 bg-orange-200 w-max px-4 py-1 print:block text-orange-900 font-semibold text-lg hover:bg-orange-300 hover:border-current transition-colors duration-300"
+				>
+					Download my resume
+				</a>
 			</article>
 		</div>
 	</body>
