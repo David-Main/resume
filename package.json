@@ -2,7 +2,7 @@
 	"name": "resume",
 	"version": "1.0.0",
 	"description": "This is a webpage of my personal resume",
-	"main": "index.js",
+	"main": "./public/index.html",
 	"scripts": {
 		"start::dev": "concurrently \"npm run tailwind::watch\" \"npm run goLive\"",
 		"tailwind::watch": "npx tailwindcss -i ./src/tailwind.css -o ./public/styles/tailwind.css --watch",
