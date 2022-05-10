@@ -577,6 +577,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: grid;
 }
 
+.contents {
+  display: contents;
+}
+
+.hidden {
+  display: none;
+}
+
 .h-8 {
   height: 2rem;
 }
@@ -849,6 +857,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   .dark\:text-blue-30 {
     --tw-text-opacity: 1;
     color: rgb(85 147 201 / var(--tw-text-opacity));
+  }
+}
+
+@media print {
+  .print\:block {
+    display: block;
+  }
+
+  .print\:flex {
+    display: flex;
+  }
+
+  .print\:hidden {
+    display: none;
+  }
+
+  .print\:flex-col {
+    flex-direction: column;
+  }
+
+  .print\:justify-between {
+    justify-content: space-between;
   }
 }
 

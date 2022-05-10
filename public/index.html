@@ -89,50 +89,72 @@
 						/>
 						<figcaption class="mt-2">
 							<h1 class="name text-3xl">David Mainoo</h1>
-							<p class="occupation dark:text-fuchsia-50 font-light">
+							<p
+								class="print:hidden occupation dark:text-fuchsia-50 font-light"
+							>
 								Computer Science Student
+							</p>
+							<p class="hidden print:block">
+								https://davidmain.netlify.app
 							</p>
 						</figcaption>
 					</figure>
 					<div
-						class="contacts flex justify-center gap-16 my-6 dark:text-gray-300 text-gray-900"
+						class="contacts flex print:flex-col w-10/12 mx-auto justify-center gap-16 my-6 dark:text-gray-300 text-gray-900"
 					>
-						<a
-							target="_blank"
-							href="tel:+233243346847"
-							class="iconbg iconbg-phone w-8"
-						>
-							<svg class="icon icon-phone w-10/12 h-8">
-								<use href="#icon-phone" />
-							</svg>
-						</a>
-						<a
-							target="_blank"
-							href="https://github.com/David-Main/"
-							class="iconbg iconbg-github w-8"
-						>
-							<svg class="icon icon-github w-10/12 h-8">
-								<use href="#icon-github" />
-							</svg>
-						</a>
-						<a
-							target="_blank"
-							href="https://www.linkedIn.com/in/davidmainoo"
-							class="iconbg iconbg-linkedIn w-8"
-						>
-							<svg class="icon icon-linkedIn w-10/12 h-8">
-								<use href="#icon-linkedIn" />
-							</svg>
-						</a>
-						<a
-							target="_blank"
-							href="mailto:work.davidmainoo@gmail.com"
-							class="iconbg iconbg-mail w-8"
-						>
-							<svg class="icon icon-mail w-10/12 h-8">
-								<use href="#icon-mail" />
-							</svg>
-						</a>
+						<div class="contents print:flex print:justify-between">
+							<abbr
+								title="+233243346847"
+								class="iconbg iconbg-phone w-8"
+							>
+								<a target="_blank" href="tel:+233243346847">
+									<svg class="icon icon-phone w-10/12 h-8">
+										<use href="#icon-phone" />
+									</svg>
+								</a>
+							</abbr>
+							<abbr
+								title="github.com/David-Main"
+								class="iconbg iconbg-github w-8"
+							>
+								<a
+									target="_blank"
+									href="https://github.com/David-Main/"
+								>
+									<svg class="icon icon-github w-10/12 h-8">
+										<use href="#icon-github" />
+									</svg>
+								</a>
+							</abbr>
+						</div>
+						<div class="contents print:flex print:justify-between">
+							<abbr
+								title="https://linkedIn.com/in/davidmainoo"
+								class="iconbg iconbg-linkedIn w-8"
+							>
+								<a
+									target="_blank"
+									href="https://linkedIn.com/in/davidmainoo"
+								>
+									<svg class="icon icon-linkedIn w-10/12 h-8">
+										<use href="#icon-linkedIn" />
+									</svg>
+								</a>
+							</abbr>
+							<abbr
+								title="work.davidmainoo@gmail.com"
+								class="iconbg iconbg-mail w-8"
+							>
+								<a
+									target="_blank"
+									href="mailto:work.davidmainoo@gmail.com"
+								>
+									<svg class="icon icon-mail w-10/12 h-8">
+										<use href="#icon-mail" />
+									</svg>
+								</a>
+							</abbr>
+						</div>
 					</div>
 				</header>
 				<!-- main / sections -->
